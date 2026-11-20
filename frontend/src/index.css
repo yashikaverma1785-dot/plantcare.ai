@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #050d09;
+    color: #e2e8f0;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1912;
+}
+::-webkit-scrollbar-thumb {
+  background: #1b4d35;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #22c55e;
+}
+
+/* Botanical Glow and Math Accent effects */
+.glow-emerald {
+  box-shadow: 0 0 25px -5px rgba(34, 197, 94, 0.25);
+}
+
+.math-matrix-cell {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
